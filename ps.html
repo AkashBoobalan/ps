@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paint Shop</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">DANIAL PAINTSHOP</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#colors">Color Picker</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#register">Register</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <h1>Welcome to PaintWorld</h1>
+    <p>Find your perfect shade with our premium paint collection.</p>
+    <a href="#products" class="cta-button">Explore Products</a>
+  </section>
+
+  <section id="products" class="products">
+    <h2>Our Products</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <h3>Exterior Paint</h3>
+        <p>Durable and weather-resistant paints for your exteriors.</p>
+      </div>
+      <div class="product-card">
+        <h3>Interior Paint</h3>
+        <p>Premium finishes to brighten up your interiors.</p>
+      </div>
+      <div class="product-card">
+        <img src="./img/Wood Coatings.png" width="100" height="100" alt="logo">
+        <h3>Wood Coatings</h3>
+        <p>Protective and aesthetic solutions for wood surfaces.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="colors" class="color-picker">
+    <h2>Color Picker</h2>
+    <p>Experiment with colors for your walls:</p>
+    <input type="color" id="colorPicker">
+    <div class="color-preview" id="colorPreview"></div>
+  </section>
+
+  <section id="about" class="about">
+    <h2>About Us</h2>
+    <p>PaintWorld is committed to bringing life to your walls with vibrant, long-lasting paints.</p>
+  </section>
+
+  <section id="register" class="register">
+    <h2>Customer Registration</h2>
+    <form id="registrationForm">
+      <input type="text" id="name" placeholder="Full Name" required>
+      <input type="email" id="email" placeholder="Email Address" required>
+      <button type="submit">Register</button>
+    </form>
+    <p id="responseMessage"></p>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 PaintWorld. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
